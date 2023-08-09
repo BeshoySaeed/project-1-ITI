@@ -1,0 +1,22 @@
+:root {
+  --color-nacBlack: #121617;
+  --color-premium: #ecac0c;
+  --color-babyBlue: #38a3d7;
+  --color-darkBlue: #ecac0d;
+  --color-green: #50af53;
+  --color-lightGreen: #97cd92;
+
+  --font-darkGray: #303b3c;
+  --font-gray: #e5e7eb;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
