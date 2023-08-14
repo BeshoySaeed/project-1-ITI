@@ -269,6 +269,8 @@
 (function () {
   let section = document.querySelector(".interval-news");
 
+  console.log(section.getBoundingClientRect().top);
+
   let image = document.querySelector(".interva-images img");
   let imageArr = [
     "../images/news1.jpg",
@@ -287,10 +289,29 @@
   }, 2000);
 
   window.addEventListener("scroll", () => {
-    if (window.scrollY >= 1600) {
+    if (window.scrollY >= 1700) {
       section.style.opacity = "1";
     } else {
       section.style.opacity = "0";
     }
   });
 })();
+
+// arrow to top
+
+let arrowTop = document.querySelector(".fa-plane-up");
+
+arrowTop.addEventListener("click", function () {
+  scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+
+window.addEventListener("scroll", function () {
+  if (window.pageYOffset > 200) {
+    arrowTop.style.display = "block";
+  } else {
+    arrowTop.style.display = "none";
+  }
+});
