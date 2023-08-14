@@ -310,8 +310,8 @@ arrowTop.addEventListener("click", function () {
 
 window.addEventListener("scroll", function () {
   if (window.pageYOffset > 200) {
-    arrowTop.style.display = "block";
+    arrowTop.style.opacity = "1";
   } else {
-    arrowTop.style.display = "none";
+    arrowTop.style.opacity = "0";
   }
 });

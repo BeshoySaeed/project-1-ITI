@@ -874,9 +874,6 @@ nav .search .signIn:hover::after {
   cursor: pointer;
   background-color: purple;
   color: white;
-  display: none;
   transition: 0.5s;
-}
-.plane-top {
-  display: block;
+  opacity: 0;
 }
